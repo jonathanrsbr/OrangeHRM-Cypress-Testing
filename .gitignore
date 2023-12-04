@@ -1,0 +1,22 @@
+# Diretório de dependências
+node_modules/
+
+# Diretório opcional do npm cache
+.npm
+
+# Dados Cypress
+# Poderia adicionar aqui, porém deixarei a amostra os dados e resultados gerados pelo cypress
+
+# VSCode
+vscode/*
+.vscode/*
+
+# Runtime data and misc
+.DS_Store
+.idea/
+
+# Log de erros e debugs
+npm-debug.log*
+
+# Relatório de arquivos do compilador
+dist
