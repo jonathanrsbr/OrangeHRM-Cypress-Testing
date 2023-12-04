@@ -10,7 +10,7 @@ link: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
 
 > Para esse projeto, considere usar as seguintes versões ou superiores: Node.js `v18.2.0` e npm `8.9.0`. 
 
-## Installation
+## Instalação
 
 Run `npm install` (ou `npm i` para a short version) para instalar as dependências de desenvolvedor.
 
