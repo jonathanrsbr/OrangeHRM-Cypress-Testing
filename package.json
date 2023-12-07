@@ -16,7 +16,8 @@
     "prettier:check": "yarn prettier:cli -l",
     "prettier:fix": "yarn prettier:cli --write \"**/**.{ts,js,tsx}\" \"**/**.{json,md,yml}\"",
     "ts:clear": "rm -rf dist",
-    "compile": "tsc && rm -rf dist"
+    "compile": "tsc && rm -rf dist",
+    "prepare": "husky install"
   },
   "repository": {
     "type": "git",
