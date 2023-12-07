@@ -25,8 +25,8 @@
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
 
 Cypress.Commands.add('login', (username, password) => {
-    cy.visit('https://opensource-demo.orangehrmlive.com/web/index.php/auth/login') 
-    cy.get('input[name="username"]').clear().type(username)
-    cy.get('input[name="password"]').clear().type(password)
-    cy.get('.oxd-button').click()
-});
+  cy.visit('https://opensource-demo.orangehrmlive.com/web/index.php/auth/login')
+  cy.get('input[name="username"]').clear().type(username)
+  cy.get('input[name="password"]').clear().type(password)
+  cy.get('.oxd-button').click()
+})

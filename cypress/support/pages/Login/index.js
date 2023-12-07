@@ -1,9 +1,7 @@
 // Ações de interação com a página
 // Acessar o login
 class Login {
-    acessarLogin(){
-         
-    }
+  acessarLogin() {}
 }
 
 export default new Login()
