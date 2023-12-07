@@ -5,5 +5,5 @@ describe('Teste de Login do Administrador', () => {
     cy.get('.oxd-sidepanel-body') // Painel lateral presente apenas no home menu
       .should('be.visible')
       .contains('Buzz') // Um dos campos do painel lateral
-  })
-})
+  });
+});

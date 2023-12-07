@@ -8,7 +8,7 @@ link: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
 
 É pré-requisito ter instalado o Node.js, bem como o npm, para poder rodar o projeto.
 
-> Para esse projeto, considere usar as seguintes versões ou superiores: Node.js `v18.2.0`, npm `8.9.0` e yarn `1.22.21`.
+> Considere usar as seguintes versões ou superiores: Node.js `v21.4.0`, npm `8.9.0` e yarn `1.22.21`.
 
 ## Instalação
 

@@ -17,7 +17,13 @@
     "prettier:fix": "yarn prettier:cli --write \"**/**.{ts,js,tsx}\" \"**/**.{json,md,yml}\"",
     "ts:clear": "rm -rf dist",
     "compile": "tsc && rm -rf dist",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "lint-staged": "lint-staged"
+  },
+  "lint-staged": {
+    "*.js": [
+      "yarn prettier:fix"
+    ]
   },
   "repository": {
     "type": "git",
@@ -34,9 +40,9 @@
   "license": "MIT",
   "homepage": "https://github.com/jonathanrsbr",
   "devDependencies": {
-    "cypress": "^13.3.0",
     "@babel/core": "^7.23.5",
     "@babel/eslint-parser": "^7.23.3",
+    "cypress": "^13.3.0",
     "cypress-mochawesome-reporter": "3.5.0",
     "eslint": "^8.55.0",
     "eslint-config-prettier": "8.8.0",
@@ -53,5 +59,8 @@
     "tsc-silent": "1.2.2",
     "typescript": "5.1.3",
     "yarn": "^1.22.21"
+  },
+  "dependencies": {
+    "lint-staged": "^15.2.0"
   }
 }
