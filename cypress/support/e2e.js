@@ -18,3 +18,4 @@ import './commands'
 
 // Alternatively you can use CommonJS syntax:
 // require('./commands')
+import 'cypress-plugin-api' // Importa o plugin de teste de api
