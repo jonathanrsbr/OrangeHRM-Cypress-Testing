@@ -61,6 +61,7 @@
     "yarn": "^1.22.21"
   },
   "dependencies": {
+    "cypress-plugin-api": "^2.11.1",
     "lint-staged": "^15.2.0"
   }
 }
