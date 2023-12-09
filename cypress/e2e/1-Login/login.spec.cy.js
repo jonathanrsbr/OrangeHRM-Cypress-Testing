@@ -7,3 +7,7 @@ describe('Teste de Login do Administrador', () => {
       .contains('Buzz') // Um dos campos do painel lateral
   })
 })
+
+// Exceção
+
+// Alternativo
