@@ -6,7 +6,7 @@ link: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
 
 ## Pre-requisitos
 
-É pré-requisito ter instalado o Node.js, bem como o npm, para poder rodar o projeto.
+É pré-requisito ter instalado o Node.js, bem como o npm ou yarn, para poder rodar o projeto.
 
 > Considere usar as seguintes versões ou superiores: Node.js `v21.4.0`, npm `10.2.5` e yarn `1.22.21`.
 
@@ -30,6 +30,10 @@ Ou, run `npm run cy:open` para abrir o Cypress no modo interativo no desktop vie
 Run `npm run test:mobile` pra rodar o teste em headless mode no mobile viewport.
 
 Ou, run `npm run cy:open` para abrir o Cyprees no modo interativo no mobile viewport.
+
+## Relatórios de teste
+
+Run `npm run report:allure` para abrir a interface local do allure.
 
 ## Apoie esse projeto
 

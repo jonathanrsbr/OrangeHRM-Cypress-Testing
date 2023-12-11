@@ -22,8 +22,7 @@
     "e2e": "cypress run --env allure=true",
     "report:allure": "allure generate allure-results --clean -o allure-report && allure open  allure-report",
     "test:allure": "npm run e2e && npm run report:allure",
-    "allure:headed": "cypress run --headed --env allure=true",
-    "allure:reporte": "allure generate"
+    "allure:headed": "cypress run --headed --env allure=true"
   },
   "lint-staged": {
     "*.js": [
