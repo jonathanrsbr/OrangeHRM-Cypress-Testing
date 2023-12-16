@@ -4,14 +4,14 @@ Cypress.on('uncaught:exception', (err, runnable) => {
   return false
 })
 
-describe('Testes de cadastro de colaborador no campo PIM', () => {
+describe('CT005 - Testes de cadastro de colaborador no campo PIM', () => {
   beforeEach(() => {
     cy.login('Admin', 'admin123') // realiza o login
     cy.get('span.oxd-text').contains('PIM').click() // clica em PIM
     cy.get('.orangehrm-header-container > .oxd-button').click() // clica no botão "Add"
   })
 
-  it('Cadastro usando username com menos de 5 caracteres', () => {
+  it('CT006 - Cadastro usando username com menos de 5 caracteres', () => {
     cy.preencherFormularioCadastro({
       firstName: 'João',
       middleName: 'Bezerra',
@@ -23,7 +23,7 @@ describe('Testes de cadastro de colaborador no campo PIM', () => {
     cy.get('.oxd-input-group > .oxd-text').should('be.visible').contains('5 characters')
   })
 
-  it('Cadastro usando username com mais de 40 caracteres', () => {
+  it('CT007 - Cadastro usando username com mais de 40 caracteres', () => {
     cy.preencherFormularioCadastro({
       firstName: 'João',
       middleName: 'Bezerra',
@@ -35,7 +35,7 @@ describe('Testes de cadastro de colaborador no campo PIM', () => {
     cy.get('.oxd-input-group > .oxd-text').should('contains.text', 'Should not exceed 40 characters')
   })
 
-  it('Cadastro de colaborador com Full Name contendo números e caracteres especiais', () => {
+  it('CT008 - Cadastro de colaborador com Full Name contendo números e caracteres especiais', () => {
     cy.preencherFormularioCadastro({
       firstName: 'João6541564@',
       middleName: 'Bezerra)){}',
@@ -47,7 +47,7 @@ describe('Testes de cadastro de colaborador no campo PIM', () => {
     cy.get('.oxd-toast').should('contains.text', 'Saved')
   })
 
-  it('Realizar cadastro com campo de Full Name vazio', () => {
+  it('CT009 - Realizar cadastro com campo de Full Name vazio', () => {
     cy.preencherFormularioCadastro({
       firstName: '',
       middleName: '',
@@ -61,7 +61,7 @@ describe('Testes de cadastro de colaborador no campo PIM', () => {
     cy.get('.--name-grouped-field > :nth-child(3) > .oxd-text').should('have.text', 'Required')
   })
 
-  it('Realizar cadastro de colaborador com Password contendo apenas letras', () => {
+  it('CT010 - Realizar cadastro de colaborador com Password contendo apenas letras', () => {
     cy.preencherFormularioCadastro({
       firstName: 'João',
       middleName: 'Bezerra',
@@ -72,7 +72,7 @@ describe('Testes de cadastro de colaborador no campo PIM', () => {
     })
     cy.get('.oxd-input-group > .oxd-text').should('contains.text', 'Your password must contain minimum 1 number')
   })
-  it('Realizar cadastro de colaborador com Password contendo apenas números', () => {
+  it('CT011 - Realizar cadastro de colaborador com Password contendo apenas números', () => {
     cy.preencherFormularioCadastro({
       firstName: 'João',
       middleName: 'Bezerra',
@@ -84,7 +84,7 @@ describe('Testes de cadastro de colaborador no campo PIM', () => {
     cy.get('.oxd-input-group > .oxd-text').should('contains.text', 'Your password must contain minimum 1 lower-case letter')
   })
 
-  it('Realizar cadastro de colaborador com Password contendo menos de 7 caracteres', () => {
+  it('CT012 - Realizar cadastro de colaborador com Password contendo menos de 7 caracteres', () => {
     cy.preencherFormularioCadastro({
       firstName: 'João',
       middleName: 'Bezerra',
@@ -96,7 +96,7 @@ describe('Testes de cadastro de colaborador no campo PIM', () => {
     cy.get('.oxd-input-group > .oxd-text').should('contains.text', 'Should have at least 7 characters')
   })
 
-  it('Realizar cadastro de colaborador com Password contendo mais de 64 caracteres', () => {
+  it('CT013 - Realizar cadastro de colaborador com Password contendo mais de 64 caracteres', () => {
     cy.preencherFormularioCadastro({
       firstName: 'João',
       middleName: 'Bezerra',
@@ -108,7 +108,7 @@ describe('Testes de cadastro de colaborador no campo PIM', () => {
     cy.get('.oxd-input-group > .oxd-text').should('contains.text', 'Should not exceed 64 characters')
   })
 
-  it('Realizar cadastro de colaborador com Password divergente do campo confirm password', () => {
+  it('CT014 - Realizar cadastro de colaborador com Password divergente do campo confirm password', () => {
     cy.preencherFormularioCadastro({
       firstName: 'João',
       middleName: 'Bezerra',
@@ -122,7 +122,7 @@ describe('Testes de cadastro de colaborador no campo PIM', () => {
     cy.get('.oxd-input-group > .oxd-text').should('contains.text', 'Passwords do not match')
   })
 
-  it('Realizar cadastro de colaborador', () => {
+  it('CT015 - Realizar cadastro de colaborador', () => {
     cy.preencherFormularioCadastro({
       firstName: 'João',
       middleName: 'Bezerra',
@@ -134,7 +134,7 @@ describe('Testes de cadastro de colaborador no campo PIM', () => {
     cy.get('.oxd-toast').should('contains.text', 'Saved')
   })
 
-  it('Realizar cadastro de colaborador já cadastrado', () => {
+  it('CT016 - Realizar cadastro de colaborador já cadastrado', () => {
     cy.preencherFormularioCadastro({
       firstName: 'João',
       middleName: 'Bezerra',

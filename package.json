@@ -4,9 +4,9 @@
   "description": "Repositório do projeto de testes do site Orange HRM, para finalização do bootcamp de QA do Avanti Atlântico",
   "scripts": {
     "cy:open": "cypress open --e2e --browser firefox --config specPattern=cypress/e2e/**/*.spec.cy.js",
-    "cy:open:mobile": "cypress open --config viewportWidth=410 viewportHeigh=860",
+    "cy:open:mobile": "cypress open --config viewportWidth=410 viewportHeight=860",
     "cy:run": "cypress run",
-    "cy:run:mobile": "cypress run --config viewportWidth=410 viewportHeigh=860",
+    "cy:run:mobile": "cypress run --config viewportWidth=410 viewportHeight=860",
     " --- Formatting: ESLint and Prettier + Typescript compiler to support JS code ---- ": "",
     "eslint": "eslint --report-unused-disable-directives --max-warnings=0 -c .eslintrc.json .",
     "eslint:fix": "yarn eslint --fix",
@@ -19,7 +19,7 @@
     "compile": "tsc && rm -rf dist",
     "prepare": "husky install",
     "lint-staged": "lint-staged",
-    "e2e": "cypress run --env allure=true",
+    "e2e": "cypress run --env allure=true --headed",
     "report:allure": "allure generate allure-results --clean -o allure-report && allure open  allure-report",
     "test:allure": "npm run e2e && npm run report:allure",
     "allure:headed": "cypress run --headed --env allure=true"
