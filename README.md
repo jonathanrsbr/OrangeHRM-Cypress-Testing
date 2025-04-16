@@ -1,6 +1,6 @@
-# Bootcamp QA - Avanti/Atlântico
+# QA - Avanti/Atlântico
 
-🚀 Projeto de automação de testes do bootcamp de QA, realizado pelo AVANTI/ATLÂNTICO. Todos os testes se darão no site Orange HRM
+🚀 Projeto de automação de testes, realizado no site Orange HRM
 
 link: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
 
