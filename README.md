@@ -7,6 +7,16 @@
 ## 📽️ Apresentação do projeto:  
 🔗 [Apresentação - Canva](https://www.canva.com/design/DAF2WkH3QXY/1quH86NcI1tDLIuohNLCLQ/edit)
 
+## O que vais encontrar neste projeto
+
+- Suíte de testes automatizados com Cypress
+
+- Implementação de pipeline de testes automatizados com CI/CD via GitHub Actions
+
+- Configuração de Git Hooks para execução de linters no pre-push com Husky
+
+- Configuração de plugins (Cypress plugin API e Allure Report)
+
 ## Pre-requisitos
 
 É pré-requisito ter instalado o Node.js, bem como o npm ou yarn, para poder rodar o projeto.
@@ -17,10 +27,7 @@
 
 Run `npm install` (ou `npm i` para a short version) para instalar as dependências de desenvolvedor.
 
-## Testes
-
-Você pode rodar os testes simulando um desktop ou o mobile viewport
-
+# Testes
 ## Desktop
 
 Run `npm test` (ou `npm t` para a short version) para rodar os testes em headless
