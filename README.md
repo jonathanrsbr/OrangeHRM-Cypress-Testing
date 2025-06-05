@@ -2,7 +2,10 @@
 
 🚀 Projeto de automação de testes, realizado no site Orange HRM
 
-link: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+🔗 [Site do Orange HRM](https://opensource-demo.orangehrmlive.com/web/index.php/auth/login)
+
+## 📽️ Apresentação do projeto:  
+🔗 [Apresentação - Canva](https://www.canva.com/design/DAF2WkH3QXY/1quH86NcI1tDLIuohNLCLQ/edit)
 
 ## Pre-requisitos
 
